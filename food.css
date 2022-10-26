@@ -1,0 +1,522 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+button:hover{
+    cursor: pointer;
+}
+body{
+      background-image: url("imgs/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    border-color: #9a9a9a #343a40 ;
+    border-width: 1px;
+    border-style: solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #343a40;
+    position:fixed; 
+    padding: 50px;
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
+    margin-top: 10px;
+    padding-top: 70px;
+  display: grid;
+  grid-template-columns: 600px 500px 300px;
+  height: 8px;
+}
+nav div ul{
+    display: flex;
+    gap: 20px;
+}
+nav  div:nth-child(3){
+    color: #ff214f;
+    font-size: larger;
+}
+nav ul a:hover{
+    color: #ff214f;
+}
+header{
+    background-color: #2e2e2ed1;
+    position:static;
+    height: 80vh;
+    text-align: center;  
+}
+header div {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    top: 50px;
+    font-size: 40px;
+    margin-top: 85px;
+    padding: 80px;
+}
+header div button{
+    margin-top: 20px;
+    padding:15px 20px ;
+    background-color: #ff214f;
+    border-radius: 4px;
+    border: #b5495e 2px solid;
+    font-size: 20px;
+}
+.about{
+    color: aliceblue;
+    margin-bottom: -80px;
+    display: grid;
+    background-color: #343a40;
+    grid-template-columns: repeat(2,50%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about img{
+    height: 80%;
+    width: 90%
+}
+.about div h2{
+    font-size: 40px;
+    padding: 70px 50px 40px ;
+
+}
+.about div p{
+    width: 62%;
+    padding: 0px 0px 0px 50px;
+    word-spacing: 2px;
+    font-size: medium;
+}
+.menu{
+    background-color: #343a40;
+}
+ h3{
+    text-align: center;
+    color: aliceblue;
+    font-size: 60px;
+    font-family:sans-serif;
+    font-weight: 200;
+    padding-bottom: 100px;
+}
+.menu img{
+    width: 25%;
+}
+.menu div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu img:hover{
+    opacity: 0.3;
+}
+.book {
+    background-image: url("imgs/book-table-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: large;
+    text-align: center;
+    height: 75vh;
+}
+.book div{
+    height: 75vh;
+    background-color: #383838b9;
+}
+.book h3{
+    padding-top: 100px;
+}
+.book input{
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    width: 20%;
+    margin: 10px;
+    padding: 10px;
+    height: 45px;
+}
+.book input::placeholder{
+    font-size: 18px;
+    width: 220px;
+    color: aliceblue;
+    padding: 25px;
+}
+.book button{
+    margin-top: 50px;
+    padding:15px 25px ;
+    background-color: #ff214f;
+    border-radius: 4px;
+    border: #b5495e 2px solid;
+    color: white;
+    font-size: 20px;
+}
+.event{
+    background-color: #343a40;
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 90px;
+}
+.event h3{
+    padding-top: 78px;
+}
+.btns button{
+    margin:0px 0px 70px 0px;
+    width: 200px;
+    height: 30px;
+    color: #ff214f;
+    border: none;
+    font-size: 20px;
+    background-color: #343a40;
+
+}
+.btns .active{
+    background-color: #ff214f;
+    color: aliceblue;
+    border-radius:30px;
+    
+}
+.event img{
+    width: 465px;
+    height: 250px;
+}
+
+.foods , .drinks {
+    display: flex;
+    width: 30%;
+}
+.foods div , .drinks div{
+    margin: 15px; 
+    padding: 5px;
+    height: 490px;
+    border: #575656 1px solid;
+}
+#price{
+    background-color: #ff214f;
+    margin: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: larger;
+    border: none;
+    border-radius: 4px;
+    color: aliceblue;
+}
+h4{
+    font-size: larger;
+    padding: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.event p{
+    padding: 9px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.drinks{
+    display: none;
+}
+.reviews{
+    background-color:#343a40;
+    text-align: center;
+    color: aliceblue;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reviews h3{
+    padding: 30px;
+}
+
+.reviews #rev{
+    display: flex;
+}
+#rev div{
+    width: 30%;
+    padding: 20px;
+}
+#rev div h4{
+    padding: 15px 0px 4px;
+    font-size: 25px;
+}
+#rev div h6{
+    padding: 0px 0px 19px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #c2c0c0;
+}
+#rev div p{
+    height: 28%;
+    padding: 30px;
+    border-color: #ff214f  #575656 #575656 #575656;
+    border-width: 2px;
+    font-size: 17px;
+    color: #dedede;
+    border-style:solid ;
+}
+.map{
+    border: #575656 1px solid;
+    padding-top: 80px;
+    color: #dedede;
+    background-color: #343a40;
+    display: flex;
+    gap: 80px;
+}
+.map h4{
+    padding: 50px 0px 0px 10px;
+    font-size: 40px;
+}
+.map p{
+    font-size: 18px;
+    width: 70%;
+    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.map ul{
+    padding: 50px;
+    font-size: 17px;
+    color: #9a9a9a;
+}
+footer{
+    padding: 100px;
+    background-color: #343a40;
+    text-align: center;
+}
+footer ul{
+    justify-content:space-around;
+    color: #dedede;
+    display: flex;
+}
+nav div:nth-child(1){
+    display: none;
+}
+@media only screen and (max-device-width: 400px){
+    body{
+        background: none;
+    }
+    nav{
+        height: 80px;
+    }
+nav div:nth-child( 1) {
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 135px;
+}
+nav div:nth-child(3){
+    margin-left: -220px;
+    font-size: 35px;
+    margin-top: 20px;
+}
+nav div img{
+    margin-top: -25px;
+    margin-left: 30px;
+    width: 30%;
+}
+nav ul{
+    font-size: 20px;
+    background-color: #343a40;
+    position: absolute;
+    top: 150px;
+}
+nav li a{
+    font-size: 30px;
+}
+nav ul li{
+    margin-top: 190px;
+    margin: 30px;
+    margin-bottom: 70px;
+}
+nav li{
+    display: none;
+}
+.hide{
+    display: block;
+}
+header{
+    width: 1600px;
+    height: 180vh;
+    background: url("imgs/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+}
+header div{
+    height: 2500px;
+    background-color: #000000bd;
+}
+header div h1{
+    font-size: 300px;
+    padding-top: 250px;
+}
+header div h2{
+    font-size: 110px;
+}
+header  button{
+    width: 570px;
+    height: 190px;
+    
+}
+header a{
+    font-size: 55px;
+}
+.about{
+    display: block;
+    width: 1600px;
+    height:700vh;
+}
+.about img{
+    display:none;
+}
+.about div{
+    width: 1600px;
+}
+.about  div h2{
+    font-size: 200px;
+}
+.about  div p{
+    width: 80%;
+    font-size: 80px;
+}
+.menu{
+    width: 1600px;
+}
+.menu h3{
+    font-size: 180px;
+}
+.menu div img{
+    width: 50%;
+}
+.book, .event, .reviews, .find , footer{
+    width: 1600px;
+    height: 350vh;
+    
+}
+.book div{
+    height: 350vh;
+}
+.book h3{
+    font-size: 220px;
+}
+.book input{
+    display: flex;
+    height: 20vh;
+    margin-left: 175px;
+    margin-bottom: 120px;
+    width: 80%;
+}
+.book input::placeholder{
+    font-size: 70px;
+}
+.book button{
+    width: 500px;
+    height: 190px;
+    font-size: 80px;
+}
+.event h3{
+    font-size: 180px;
+}
+.event button{
+    width: 250px;
+    height: 170px;
+    margin: 20px;
+    font-size: 80px;
+}
+.event{
+    height: 1350vh;
+}
+.event img{
+    width: 1100px;
+    height: 1350px;
+}
+.foods , .drinks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 95%; 
+    
+}
+.foods div , .drinks div{
+    margin-bottom: 350px; 
+   height: 350vh;
+   margin-left: 65px;
+}
+
+#price{
+    margin: 80px;
+    width:350px;
+    height: 220px;
+    font-size: 180px;
+    border-radius: 15px;
+}
+h4{
+    font-size:120px;
+    padding: 20px;
+}
+.event p{
+    padding-bottom: 20px;
+   font-size: 70px;
+}
+.reviews{
+    height: 580vh;
+}
+.reviews h3{
+    font-size: 280px;
+    margin-bottom: 150px;
+}
+.reviews #rev{
+    
+    flex-direction: column;
+}
+#rev div{
+    width: 80%;
+    
+}
+#rev  div h4{
+font-size: 100px;
+}
+#rev div h6{
+    font-size: 70px;
+}
+#rev div p{
+    margin-bottom: 150px;
+    font-size: 60px;
+    margin-left: 180px;
+    padding: 80px;
+}
+.map{
+    width: 1600px;
+    height: 400vh;
+    flex-direction: column;
+    background-color: #343a40;
+}
+iframe{
+    height: 150vh;
+    width: 1600px;
+}
+.map h4{
+    font-size: 250px;
+}
+.map p{
+    width: 1500px;
+    font-size: 70px;
+}
+.map ul{
+    font-size: 40px;
+}
+.map ul li{
+    margin-bottom: 75px;
+}
+.map img{
+    width: 4%;
+}
+footer{
+    width: 1405px;
+    height: 120vh;
+}
+footer h4{
+    font-size: 80px;
+    margin: 25px;
+}
+footer p{
+    font-size: 35px;
+}
+}
